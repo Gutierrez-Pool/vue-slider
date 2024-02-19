@@ -17,7 +17,7 @@
         <div class="container">
             <div class="slider-wrapper" tabindex="0">
 
-                <div class="item" 
+                <div class="item"
                     v-for="(currentSlide, index) in slides" 
                     v-show="index == activeSlideIndex"
                     >
@@ -41,6 +41,7 @@
                     <div class="thumb" 
                         v-for="(currentImage, index) in slides"
                         @click="changeSlide(index)"
+                        :class="index == activeSlideIndex ? 'active' : '' "
                         >
                             <img :src='currentImage.image' :alt="'Immagine ' + (index + 1)" />
                     </div>
