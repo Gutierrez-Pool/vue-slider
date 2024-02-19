@@ -5,7 +5,7 @@ createApp({
     data() {
         return {
 
-            
+            activeSlideIndex: 0,
 
             slides: [
                 {
