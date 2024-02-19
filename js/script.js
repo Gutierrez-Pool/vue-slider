@@ -67,11 +67,18 @@ createApp({
 
         },
 
+
+        //  al click su una thumb, visualizzare in grande l'immagine corrispondente
+        changeSlide(index) {
+
+            this.activeSlideIndex = index
+
+        }
+
     },
 
 }).mount('#app');
 
 // Bonus:
-// al click su una thumb, visualizzare in grande l'immagine corrispondente
-// applicare l'autoplay allo slider: ogni 3 secondi, cambia immagine automaticamente
-// quando il cursore va in hover sullo slider, bloccare l'autoplay e farlo riprendere quando esce
+//  applicare l'autoplay allo slider: ogni 3 secondi, cambia immagine automaticamente
+//  quando il cursore va in hover sullo slider, bloccare l'autoplay e farlo riprendere quando esce
